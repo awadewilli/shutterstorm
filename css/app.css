@@ -5761,6 +5761,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@media (max-width: 860px) {
+  #nav-logo {
+    display: none; } }
 @font-face {
   font-family: "FireyeHeadline";
   src: url(../fonts/FireyeGF_3_Headline.ttf);
@@ -5876,13 +5879,16 @@ nav {
   background-image: url("../images/SSTORM_012074.png"); }
 
 .recital-info {
+  font-family: "FireyeLight";
   background-color: black;
   color: white;
   padding: 50px;
   margin-top: 25px;
   margin-bottom: 25px; }
   .recital-info h3 {
-    margin-top: 50px; }
+    margin-top: 50px;
+    max-width: 80%;
+    margin: 0 auto; }
 
 .email-form input {
   width: 50%; }
@@ -6004,5 +6010,9 @@ footer {
     max-width: 35px;
     display: block;
     margin: 0 auto; }
+
+.gallery {
+  background-color: black;
+  padding-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */
