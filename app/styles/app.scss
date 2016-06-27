@@ -4,7 +4,12 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@media (max-width:860px){
+  #nav-logo{
+    display:none;
+  }
 
+}
 @font-face {
   font-family: "FireyeHeadline";
   src:url(../fonts/FireyeGF_3_Headline.ttf);
@@ -135,6 +140,7 @@ nav{
   background-image: url('../images/SSTORM_012074.png');
 }
 .recital-info{
+  font-family: "FireyeLight";
   background-color: black;
   color:white;
   padding: 50px;
@@ -142,6 +148,8 @@ nav{
   margin-bottom: 25px;
   h3{
     margin-top: 50px;
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -281,4 +289,8 @@ footer{
     display: block;
     margin:0 auto;
   }
+}
+.gallery{
+  background-color: black;
+  padding-top: 50px;
 }
