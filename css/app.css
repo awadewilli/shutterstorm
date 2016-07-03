@@ -5765,6 +5765,11 @@ button.close {
   .home-banner h1 {
     font-size: 7vw !important; } }
 @media (max-width: 767px) {
+  #menu-icon {
+    display: block !important;
+    padding-bottom: 15px;
+    padding-left: 5px; }
+
   nav img {
     position: static !important;
     bottom: 200px; }
@@ -5773,16 +5778,21 @@ button.close {
     display: none; }
 
   nav {
-    height: auto !important;
-    padding-bottom: 10px; }
+    padding-top: 15px !important;
+    height: auto !important; }
+
+  nav li:last-child {
+    padding-bottom: 20px; }
+
+  .main-nav {
+    display: none; }
 
   #testimony {
     padding: 15px;
     font-size: 11pt !important; }
 
   .home-banner, .recital-banner, .contact-banner {
-    margin-top: 180px !important;
-    height: 300px !important; }
+    margin-top: 50px !important; }
     .home-banner h1, .recital-banner h1, .contact-banner h1 {
       font-size: 8vw !important; }
 
@@ -5793,7 +5803,10 @@ button.close {
     padding: 20px; }
     .recital-info p {
       max-width: 80% !important;
-      font-size: 3.5vw !important; } }
+      font-size: 3.5vw !important; }
+
+  .tour-heading h1 {
+    font-size: 7vw !important; } }
 @font-face {
   font-family: "FireyeHeadline";
   src: url(../fonts/FireyeGF_3_Headline.ttf);
@@ -5815,6 +5828,9 @@ button.close {
 *::before,
 *::after {
   box-sizing: border-box; }
+
+.hidden {
+  display: none; }
 
 h1 {
   margin-top: 0px;
@@ -5847,10 +5863,12 @@ nav {
     max-height: 75px;
     bottom: 30px; }
 
+#menu-icon {
+  display: none; }
+
 .home-banner {
   background-attachment: fixed;
   margin-top: 70px;
-  height: 450px;
   width: 100%;
   padding: 100px 0px;
   background-image: url("../images/SSTORM_011426.JPG");
@@ -5923,8 +5941,7 @@ nav {
 
 .about {
   background-color: black;
-  height: 575px;
-  padding-top: 100px; }
+  padding: 10%; }
   .about h1 {
     color: white;
     text-align: center;
@@ -5940,7 +5957,8 @@ nav {
   width: 80%;
   height: auto;
   background-color: white;
-  margin: 25px auto; }
+  margin: 25px auto;
+  box-shadow: -2px 4px 45px -2px rgba(255, 255, 255, 0.81); }
   .circle img {
     width: 100%;
     height: 100%; }
@@ -6003,8 +6021,7 @@ nav {
 .tour-heading {
   color: white;
   margin-top: 0px;
-  padding-top: 50px;
-  height: 150px;
+  padding: 50px;
   background-color: black;
   text-align: center; }
 
