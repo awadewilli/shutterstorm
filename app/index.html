@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>shutterstom</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+      <nav>
+        <img id="menu-icon" src="images/1467353606_menu-alt.svg" alt="">
+        <ul class="main-nav" id="main-nav">
+          <a href="index.html"><li class="col-xs-12 col-sm-1">HOME</li></a>
+          <a href="recital.html"> <li class="col-xs-12 col-sm-2">RECITALS</li> </a>
+          <a href="index.html"><li class="col-xs-12 col-sm-1">ABOUT</li></a>
+          <li class="col-xs-12 col-sm-3 logo-li"><img id="nav-logo" src="images/logo.png" alt="shutterstorm-logo"></li>
+          <a href="contact.html"><li class="col-xs-12 col-sm-1">CONTACT </li></a>
+          <a href="#"><li class="col-xs-12 col-sm-2">PLACE NEW ORDER</li></a>
+          <li class="col-xs-12 col-sm-2">CURRENT ORDERS</li>
+        </ul>
+      </nav>
+    </div>
+      <section class="row">
+        <div class=" col-xs-12 col-sm-12 home-banner">
+          <h1>CAPTURING THE MOMENTS THAT MATTER</h1>
+        </div>
+      </section>
+      <section class="about row">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h1>SHUTTER STORM</h1>
+            <p>Shutter Storm is a multi-media company primarily based in the world of competitive dance.
+               We specialize in the art of archiving creative and artistic movement through photography
+               and videography.  Our highly trained staff strive to ensure that the dedication, hard work,
+               and emotion of countless hours of rehearsal are captured for a lifetime.</p>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4">
+              <div class="circle">
+                <h3>Current Orders</h3>
+              <img src="images/2.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-4">
+              <div class="circle">
+                <h3>Studio Shots and Recitals</h3>
+                <img src="images/EDIT1-3.png" alt="">
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-4">
+              <div class="circle">
+                <h3>Place New Order</h3>
+                <img src="images/4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+          <div class="row">
+            <div id="stage-bg" style="text-align:center">
+              <h4 style="font-size:30px;">COMING TO A CITY NEAR YOU</h4>
+              <img src="./images/situation-pin.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div id="zen">
+              <p>
+                Check Out Our All New Online Store For All Of Your Viewing And Purchasing Needs...
+                From Digital Downloads And Prints To Specialty Items And Videos, We Have You Covered!
+              </p>
+              <div id="zen-btn">
+                <a href="http://shutterstorm.zenfolio.com/p332528765"><h4>View Our Portfolio on Zenfolio</h4></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="testimony">
+              <p>
+                "We recently booked Shutter Storm for our dance studio portraits and our Spring Concert photography.
+                  We couldn't be happier!  The photographer was polite, professional and extremely talented.
+                  The dancers' posed shots were adorable but most impressive were the action shots;
+                  our clients were thrilled with the end result.  We have already begun using these spectacular images for various studio promotions and we have reserved Shutter Storm for our upcoming Nutcracker performance and our dance company headshots and performance showcase.  Thank you Shutter Storm for such a terrific experience!"
+              </p>
+              <span>- Lisa </span><br><span class="title">Studio Owner/Company Director of Dance Alliance in Brighton, Michigan</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="tours">
+              <div class="tour-heading">
+                <h1>UPCOMING TOUR INFORMATION</h1>
+              </div>
+              <div class="tour-details">
+                <h1>IGNITE TOUR </h1>
+                <h1>2016-2017</h1>
+                <h2>CITIES AND DATES COMING SOON</h2>
+              </div>
+
+            </div>
+          <footer>
+            <div class="social-icons">
+              <h5>FOLLOW US ON FACEBOOK</h5>
+              <a href="https://www.facebook.com/shutterstorm16/?fref=ts" target="_blank"><img src="images/fbooklogo.png" alt=""></a>
+            </div>
+          </footer>
+          </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBMfwpDok1RAnBG-8S5EhifyP7UgPnkxM8",
+        authDomain: "shutterstorm-60b9f.firebaseapp.com",
+        databaseURL: "https://shutterstorm-60b9f.firebaseio.com",
+        storageBucket: "shutterstorm-60b9f.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
