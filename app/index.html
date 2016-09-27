@@ -16,7 +16,8 @@
           <a href="recital.html"> <li class="col-xs-12 col-sm-2">RECITALS</li> </a>
           <a href="index.html"><li class="col-xs-12 col-sm-1">ABOUT</li></a>
           <li class="col-xs-12 col-sm-3 logo-li"><img id="nav-logo" src="images/logo.png" alt="shutterstorm-logo"></li>
-          <a href="contact.html"><li class="col-xs-12 col-sm-2">CONTACT US</li></a>
+          <a href="contact.html"><li class="col-xs-12 col-sm-1">CONTACT </li></a>
+          <a href="#"><li class="col-xs-12 col-sm-2">PLACE NEW ORDER</li></a>
           <li class="col-xs-12 col-sm-2">CURRENT ORDERS</li>
         </ul>
       </nav>
@@ -39,25 +40,28 @@
           <div class="row">
             <div class="col-xs-4 col-sm-4">
               <div class="circle">
-              <img src="images/SSTORM_018663.png" alt="">
+                <h3>Current Orders</h3>
+              <img src="images/2.jpg" alt="">
               </div>
             </div>
             <div class="col-xs-4 col-sm-4">
               <div class="circle">
+                <h3>Studio Shots and Recitals</h3>
                 <img src="images/EDIT1-3.png" alt="">
               </div>
             </div>
             <div class="col-xs-4 col-sm-4">
               <div class="circle">
-                <img src="images/SSTORM_019971.png" alt="">
+                <h3>Place New Order</h3>
+                <img src="images/4.jpg" alt="">
               </div>
             </div>
           </div>
         </section>
           <div class="row">
-            <div id="stage-bg">
-              <img id="logo-lg" src="images/logo.png" alt="">
-              <h4>CAPTURING THE MOMENTS THAT MATTER</h4>
+            <div id="stage-bg" style="text-align:center">
+              <h4 style="font-size:30px;">COMING TO A CITY NEAR YOU</h4>
+              <img src="./images/situation-pin.png" alt="">
             </div>
           </div>
           <div class="row">
@@ -79,7 +83,7 @@
                   The dancers' posed shots were adorable but most impressive were the action shots;
                   our clients were thrilled with the end result.  We have already begun using these spectacular images for various studio promotions and we have reserved Shutter Storm for our upcoming Nutcracker performance and our dance company headshots and performance showcase.  Thank you Shutter Storm for such a terrific experience!"
               </p>
-              <span>- Lisa </span></br><span class="title">Studio Owner/Company Director of Dance Alliance in Brighton, Michigan</span>
+              <span>- Lisa </span><br><span class="title">Studio Owner/Company Director of Dance Alliance in Brighton, Michigan</span>
             </div>
           </div>
           <div class="row">
@@ -103,6 +107,17 @@
           </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBMfwpDok1RAnBG-8S5EhifyP7UgPnkxM8",
+        authDomain: "shutterstorm-60b9f.firebaseapp.com",
+        databaseURL: "https://shutterstorm-60b9f.firebaseio.com",
+        storageBucket: "shutterstorm-60b9f.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
