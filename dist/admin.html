@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>shutterstom</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBMfwpDok1RAnBG-8S5EhifyP7UgPnkxM8",
+      authDomain: "shutterstorm-60b9f.firebaseapp.com",
+      databaseURL: "https://shutterstorm-60b9f.firebaseio.com",
+      storageBucket: "shutterstorm-60b9f.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      alert('welcome');
+    } else {
+
+    }
+});
+  </script>
+</head>
+<body style="padding:30px">
+  <h1>Customer Database</h1>
+  <form class="form" style="width:50%">
+  <div class="form-group">
+    <label for="CUSTOMER NAME">Name</label>
+    <input type="text" class="form-control" id="customer-name" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Event City</label>
+    <input type="text" class="form-control" id="event-city" placeholder="city">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Address</label>
+    <input type="email" class="form-control" id="address" placeholder="address">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Phone Number</label>
+    <input type="email" class="form-control" id="phone-number" placeholder="XXX-XXX-XXXX">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Tracking Number</label>
+    <input type="email" class="form-control" id="tracking-numbers" placeholder="tracking #">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Digital Dropbox Link</label>
+    <input type="email" class="form-control" id="digital-dropbox" placeholder="link">
+  </div>
+  <button type="submit" class="btn btn-default">Add Order</button>
+</form>
+  <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Event City</th>
+      <th>Address</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Tracking Number</th>
+      <th>Digital Dropbox Link</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Name</td>
+      <td>Event City</td>
+      <td>Address</td>
+      <td>Phone Number</td>
+      <td>Email</td>
+      <td>Tracking Number</td>
+      <td>Digital Dropbox Link</td>
+      <td><button>Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+<script src="js/bundle.js"></script>
+</html>
