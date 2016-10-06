@@ -124,6 +124,10 @@ nav{
     max-height: 75px;
     bottom:30px;
   }
+  a,a:visited{
+    color:inherit;
+    cursor: pointer;
+  }
 }
 #menu-icon{
   display:none;
@@ -133,7 +137,7 @@ nav{
   margin-top: 70px;
   width: 100%;
   padding:150px 0px;
-  background-image: url('../images/1.JPG');
+  background-image: url('../images/ladm_1.jpg');
   background-position: center;;
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,6 +148,12 @@ nav{
     font-size: 6vw;
     color:white;
     text-align: center;
+  }
+}
+.social-icons{
+  p{
+    text-align: center;
+    color:#FFF;
   }
 }
 .contact-banner, .recital-banner{
