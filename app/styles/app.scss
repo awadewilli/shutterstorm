@@ -4,63 +4,6 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@media (max-width:860px){
-
-.home-banner{
-  h1{
-    font-size: 7vw !important;
-  }
-}
-}
-@media (max-width:767px) {
-  #menu-icon{
-    display:block !important;
-    padding-bottom: 15px;
-    padding-left: 5px;
-  }
-  nav img{
-    position: static !important;
-    bottom:200px;
-  }
-  .logo-li{
-    display: none;
-  }
-  nav{
-    padding-top: 15px !important;
-    height:auto !important;
-  }
-  nav li:last-child{
-    padding-bottom: 20px;
-  }
-  .main-nav{
-    display:none;
-  }
-  #testimony{
-  padding: 15px;
-  font-size: 11pt !important;
-  }
-  .home-banner, .recital-banner,.contact-banner{
-    margin-top: 50px !important;
-    h1{
-      font-size: 8vw !important;
-    }
-  }
-  #stage-bg{
-    height:300px !important;
-  }
-  .recital-info{
-    padding: 20px;
-    p{
-      max-width: 80% !important;
-      font-size: 3.5vw !important;
-    }
-  }
-  .tour-heading{
-    h1{
-      font-size: 7vw !important;
-    }
-  }
-}
 @font-face {
   font-family: "FireyeHeadline";
   src:url(../fonts/FireyeGF_3_Headline.ttf);
@@ -101,6 +44,10 @@ p{
 img {
   max-width: 100%;
 }
+.headline{
+opacity:0;
+margin-top: 0px;
+}
 nav{
   width: 100%;
   padding-top: 35px;
@@ -137,15 +84,18 @@ nav{
   margin-top: 70px;
   width: 100%;
   padding:150px 0px;
+  background-color: #000;
   background-image: url('../images/ladm_1.jpg');
-  background-position: center;;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   h1{
-    max-width: 80%;
+    position: relative;
+    top:0;
+    max-width: 90%;
     margin: 0 auto;
-    font-size: 6vw;
+    font-size: 6rem;
     color:white;
     text-align: center;
   }
@@ -416,4 +366,62 @@ footer{
 100%{
   top:40px;
 }
+}
+////////////////////// Media Queries/////////////////
+@media (max-width:860px){
+
+.home-banner{
+  h1{
+    font-size: 7vw !important;
+  }
+}
+}
+@media (max-width:767px) {
+  #menu-icon{
+    display:block !important;
+    padding-bottom: 15px;
+    padding-left: 5px;
+  }
+  nav img{
+    position: static !important;
+    bottom:200px;
+  }
+  .logo-li{
+    display: none;
+  }
+  nav{
+    padding-top: 15px !important;
+    height:auto !important;
+  }
+  nav li:last-child{
+    padding-bottom: 20px;
+  }
+  .main-nav{
+    display:none;
+  }
+  #testimony{
+  padding: 15px;
+  font-size: 11pt !important;
+  }
+  .home-banner, .recital-banner,.contact-banner{
+    margin-top: 50px !important;
+    h1{
+      font-size: 8vw !important;
+    }
+  }
+  #stage-bg{
+    height:300px !important;
+  }
+  .recital-info{
+    padding: 20px;
+    p{
+      max-width: 80% !important;
+      font-size: 3.5vw !important;
+    }
+  }
+  .tour-heading{
+    h1{
+      font-size: 7vw !important;
+    }
+  }
 }

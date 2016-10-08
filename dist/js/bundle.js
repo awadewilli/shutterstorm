@@ -16,6 +16,19 @@ $(window).resize(function(){
   }
 });
 
+
+$("document").ready(function(){
+  setTimeout(dropIn,1200);
+});
+
+function dropIn(){
+  $(".headline").animate({
+        opacity: 1,
+        top:"50px",
+    },1200
+    );
+}
+
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.4

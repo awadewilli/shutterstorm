@@ -13,3 +13,16 @@ $(window).resize(function(){
     document.getElementById('main-nav').style.display='none';
   }
 });
+
+
+$("document").ready(function(){
+  setTimeout(dropIn,1200);
+});
+
+function dropIn(){
+  $(".headline").animate({
+        opacity: 1,
+        top:"50px",
+    },1200
+    );
+}
