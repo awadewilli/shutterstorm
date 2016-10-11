@@ -22,7 +22,7 @@ $("document").ready(function(){
 function dropIn(){
   $(".headline").animate({
         opacity: 1,
-        top:"50px",
+        top:"65px",
     },1200
     );
 }
