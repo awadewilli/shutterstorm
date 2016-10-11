@@ -80,8 +80,9 @@ nav{
   display:none;
 }
 .home-banner{
-  background-attachment: fixed;
-  margin-top: 70px;
+  max-width: 1200px;
+  // background-attachment: fixed;
+  margin: 70px auto 0 auto;
   width: 100%;
   padding:150px 0px;
   background-color: #000;
@@ -110,10 +111,11 @@ nav{
   background-attachment: fixed;
   height:450px;
   width: 100%;
-  margin-top: 70px;
-  padding-top:180px;
-  background-image: url('../images/SSTORM_003017.png');
-  background-position: center;
+  max-width: 1200px;
+  padding:300px 0px;
+  margin:0 auto;
+  background-image: url('../images/contact_bg.jpg');
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   h1{
@@ -125,12 +127,9 @@ nav{
 }
 .contact-info{
   text-align: center;
-  margin-bottom: 100px;
-
   p{
-    margin: 50px auto;
-    max-width: 50%;
-    min-width: 40%;
+    padding: 25px 15px;
+    margin: 0 auto;
     font-size: 15pt;
   }
   h5{
@@ -150,6 +149,7 @@ nav{
     min-width: 40%;
   }
 }
+
 .recital-banner{
   background-image: url('../images/SSTORM_012074.png');
 }
@@ -359,6 +359,18 @@ footer{
   background-color: black;
   padding-top: 50px;
 }
+
+.orders{
+  text-align: center;
+   h1{
+    margin-top: 200px;
+    font-size: 6rem;
+  }
+
+  p{
+    font-size: 2.5rem;
+  }
+}
 @keyframes fallin{
 0%{
   top:-200px;
@@ -404,9 +416,10 @@ footer{
   font-size: 11pt !important;
   }
   .home-banner, .recital-banner,.contact-banner{
+    padding: 100px 0px;
     margin-top: 50px !important;
     h1{
-      font-size: 8vw !important;
+      font-size: 4rem !important;
     }
   }
   #stage-bg{
@@ -423,5 +436,9 @@ footer{
     h1{
       font-size: 7vw !important;
     }
+  }
+  .contact-img{
+    padding-left: inherit !important;
+    padding-right: inherit !important;
   }
 }

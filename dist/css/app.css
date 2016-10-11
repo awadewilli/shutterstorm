@@ -5876,8 +5876,8 @@ nav {
   display: none; }
 
 .home-banner {
-  background-attachment: fixed;
-  margin-top: 70px;
+  max-width: 1200px;
+  margin: 70px auto 0 auto;
   width: 100%;
   padding: 150px 0px;
   background-color: #000;
@@ -5902,10 +5902,11 @@ nav {
   background-attachment: fixed;
   height: 450px;
   width: 100%;
-  margin-top: 70px;
-  padding-top: 180px;
-  background-image: url("../images/SSTORM_003017.png");
-  background-position: center;
+  max-width: 1200px;
+  padding: 300px 0px;
+  margin: 0 auto;
+  background-image: url("../images/contact_bg.jpg");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat; }
   .contact-banner h1, .recital-banner h1 {
@@ -5915,12 +5916,10 @@ nav {
     text-align: center; }
 
 .contact-info {
-  text-align: center;
-  margin-bottom: 100px; }
+  text-align: center; }
   .contact-info p {
-    margin: 50px auto;
-    max-width: 50%;
-    min-width: 40%;
+    padding: 25px 15px;
+    margin: 0 auto;
     font-size: 15pt; }
   .contact-info h5 {
     font-family: "Avenir";
@@ -6113,6 +6112,14 @@ footer {
   background-color: black;
   padding-top: 50px; }
 
+.orders {
+  text-align: center; }
+  .orders h1 {
+    margin-top: 200px;
+    font-size: 6rem; }
+  .orders p {
+    font-size: 2.5rem; }
+
 @keyframes fallin {
   0% {
     top: -200px; }
@@ -6149,9 +6156,10 @@ footer {
     font-size: 11pt !important; }
 
   .home-banner, .recital-banner, .contact-banner {
+    padding: 100px 0px;
     margin-top: 50px !important; }
     .home-banner h1, .recital-banner h1, .contact-banner h1 {
-      font-size: 8vw !important; }
+      font-size: 4rem !important; }
 
   #stage-bg {
     height: 300px !important; }
@@ -6163,6 +6171,10 @@ footer {
       font-size: 3.5vw !important; }
 
   .tour-heading h1 {
-    font-size: 7vw !important; } }
+    font-size: 7vw !important; }
+
+  .contact-img {
+    padding-left: inherit !important;
+    padding-right: inherit !important; } }
 
 /*# sourceMappingURL=app.css.map */
