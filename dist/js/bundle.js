@@ -24,8 +24,22 @@ $("document").ready(function(){
 function dropIn(){
   $(".headline").animate({
         opacity: 1,
-        top:"65px",
-    },1200
+        top:"150px",
+    },1000,function(){
+      $(".headline-left").animate({
+            opacity: 1,
+            top:"300px",
+            left:"5%"
+        },1000,function(){
+          $(".headline-right").animate({
+                opacity: 1,
+                top:"300px",
+                right:"7%"
+            },1000
+            );
+        }
+        );
+      }
     );
 }
 
