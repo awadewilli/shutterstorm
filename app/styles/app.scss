@@ -84,21 +84,45 @@ nav{
   // background-attachment: fixed;
   margin: 70px auto 0 auto;
   width: 100%;
-  padding:150px 0px;
+  padding:250px 0px 200px 0px;
   background-color: #000;
-  background-image: url('../images/ladm_1.jpg');
+  background-image: url('../images/homepagebackground_new.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   h1{
-    position: relative;
-    top:0;
+    position: absolute;
+    top:50px;
+    left:20%;
+    right:20%;
     max-width: 90%;
     margin: 0 auto;
-    font-size: 6rem;
+    font-size: 5vw;
     color:white;
     text-align: center;
+  }
+  .headline-left{
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    top:0px;
+    left:5%;
+    right:inherit;
+    max-width: 40%;
+    text-align: center;
+  }
+  .headline-right{
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+
+    top:0px;
+    right:7%;
+    left:inherit;
+    max-width: 40%;
+    text-align: center;
+
   }
 }
 .social-icons{
@@ -380,11 +404,12 @@ footer{
 }
 }
 ////////////////////// Media Queries/////////////////
+
 @media (max-width:860px){
 
 .home-banner{
   h1{
-    font-size: 7vw !important;
+    font-size: 5vw !important;
   }
 }
 }
@@ -419,7 +444,20 @@ footer{
     padding: 100px 0px;
     margin-top: 50px !important;
     h1{
-      font-size: 4rem !important;
+      font-size: 5vw !important;
+      top:100px !important;
+    }
+    .headline-left{
+      top: 155px !important;
+    }
+    .headline-right{
+      position: absolute;
+      display: inline-block;
+      top: 155px !important;
+      right: 7%;
+      left: inherit;
+      max-width: 35%;
+      text-align: center;
     }
   }
   #stage-bg{
@@ -434,11 +472,19 @@ footer{
   }
   .tour-heading{
     h1{
-      font-size: 7vw !important;
+      font-size: 6vw !important;
     }
   }
   .contact-img{
     padding-left: inherit !important;
     padding-right: inherit !important;
+  }
+}
+.circle{
+  max-width: 60%;
+}
+@media(min-width:1250px){
+  .home-banner h1{
+    font-size: 5rem !important;
   }
 }
