@@ -5866,7 +5866,7 @@ nav {
     text-align: center; }
   nav img {
     position: relative;
-    max-height: 75px;
+    max-height: 150px;
     bottom: 30px; }
   nav a, nav a:visited {
     color: inherit;
@@ -5892,7 +5892,7 @@ nav {
     right: 20%;
     max-width: 90%;
     margin: 0 auto;
-    font-size: 5vw;
+    font-size: 4.2vw;
     color: white;
     text-align: center; }
   .home-banner .headline-left {
@@ -6179,7 +6179,7 @@ footer {
     padding: 100px 0px;
     margin-top: 50px !important; }
     .home-banner h1, .recital-banner h1, .contact-banner h1 {
-      font-size: 5vw !important;
+      font-size: 4.2vw !important;
       top: 100px !important; }
     .home-banner .headline-left, .recital-banner .headline-left, .contact-banner .headline-left {
       top: 155px !important; }
