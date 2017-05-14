@@ -6144,6 +6144,14 @@ footer {
   .orders p {
     font-size: 2.5rem; }
 
+.light-box {
+  padding: 40px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center; }
+
 @keyframes fallin {
   0% {
     top: -200px; }
